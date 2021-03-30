@@ -5,35 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Login</title>
   </head>
 
   <body>
-    <header>
-      <h1>Project Explorer</h1>
-      <h2>One Stop Database for Acaemic Projects</h2>
-    </header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="search.html">Projects</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
 
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 ">
+      <a class="navbar-brand" href="#">Project Explorer</a>
 
-    </nav>
-    <main>
-      <form>
-        <h1>Login</h1>
-        <label>Email Address: </label>
-        <input type="email" name="email" />
-        <br><br>
-        <label>Password: </label>
-        <input type="password" name="password" /><br><br>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-2 " type="text" name="searchForm" placeholder="Search Projects">
 
-        <input type="submit" />
+        <button class="btn btn-primary btn-outline-light mr-2">Search</button>
       </form>
 
-    </main>
+      <ul class=" navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Submit</a>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <form>
+      <div class="mx-auto w-75">
+
+        <h1>Login</h1>
+        <div class="form-group ">
+          <label for="emailAddress">Email Address </label>
+          <input class="form-control col-md-4" type="email" name="email" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control col-md-4" type="password" name="password" placeholder="Password" />
+        </div>
+
+        <button type=" submit" class="btn btn-primary ">Login</button>
+      </div>
+    </form>
+
+
+
+    <footer>
+      <div class="container">
+        <div class="bg-light my-1 py-1 text-right ">
+          <p>Project Explorer &copy; 2020 - <b>Edconnect</b></p>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
