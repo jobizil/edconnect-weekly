@@ -5,87 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Profile</title>
   </head>
 
   <body>
-    <header>
-      <h1>Project Explorer</h1>
-      <h2>One Stop Database for Acaemic Projects</h2>
-    </header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="search.html">Projects</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 ">
+      <a class="navbar-brand" href="#">Project Explorer</a>
 
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-2 " type="text" name="searchForm" placeholder="Search Projects">
 
-    </nav>
+        <button class="btn btn-primary btn-outline-light mr-2">Search</button>
+      </form>
 
-    <section>
-      <div>
-        <h2>Job Ugbem</h2>
-        <h4>ugbemjob57@gmail.com</h4>
-        <ul>
-          <li>Program: Computer Science</li>
-          <li>Matric: 22/2229</li>
-          <li>Graduation Year: 2021</li>
+      <ul class=" navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Submit</a>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
         </ul>
       </div>
+    </nav>
+
+
+    <div class="container">
       <div>
-        <form>
-          <h1>Update Profile</h1>
-
-          <label>First Name: </label>
-          <input type="text" name="firstName" />
-          <br><br>
-          <label>Last Name: </label>
-          <input type="text" name="lastName" />
-          <br><br>
-          <label>Email Address: </label>
-          <input type="email" name="email" />
-          <br><br>
-          <label>Matric Number: </label>
-          <input type="text" name="matricNumber" />
-          <br><br>
-          <label>Program: </label>
-          <select name="program">
-            <option value="computer_science">Computer Science</option>
-            <option value="computer_information_systems">Computer Information Systems</option>
-            <option value="computer_technology"> Computer Technology
-            </option>
-          </select>
-          <br><br>
-          <label>Year of Graduation: </label>
-          <select name="graduationYear">
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-
-          </select>
-          <br><br>
-          <input type="submit" />
-        </form>
+        <h1 class="display-5">Job Ugbem</h1>
+        <p class="lead">ugbemjob57@gmail.com</p>
       </div>
-      <div>
-        <form>
-          <h1>Change Password</h1>
-          <label>Current Password: </label>
-          <input type="password" name="currentPassword" /><br><br>
-          <label>New Password: </label>
-          <input type="password" name="newPassword" /><br><br>
-          <label>Confirm Password: </label>
-          <input type="password" name="confirmPassword" /><br><br>
-          <input type="submit" />
-        </form>
-      </div>
-    </section>
+      <div class="form-row bg-light my-1 py-1">
+        <div class=" col-md-3">
+          Program <br> Computer Science
+        </div>
+        <div class=" col-md-3">
+          Matriculation Number <br> 22/2229
+        </div>
+        <div class="col col-md-3">
+          Graduation Year <br> 2021
+        </div>
 
+      </div>
+      <!-- Profilw Update -->
+      <form>
+        <h5 class="mt-5 ">Update Profile</h5>
+        <hr>
+
+        <div class="mx-auto w-75">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label>First Name </label>
+              <input class="form-control" type="text" name="firstName" />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Last Name </label>
+              <input class="form-control" type="text" name="lastName" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label>Email Address </label>
+              <input class="form-control" type="email" name="email" />
+            </div>
+            <div class="form-group col-md-4">
+              <label>Program: </label>
+              <select class="form-control" name="program">
+                <option selected> Choose...</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="computer_information_systems">Computer Information Systems</option>
+                <option value="computer_technology"> Computer Technology
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label>Matric Number </label>
+              <input class="form-control" type="text" name="matricNumber" />
+            </div>
+            <div class="form-gropu col-md-4">
+              <label>Year of Graduation: </label>
+              <select class="form-control" name="graduationYear">
+                <option selected>Choose...</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">Update Profile</button>
+        </div>
+      </form>
+
+      <!-- Change Password -->
+      <form>
+        <h5 class="mt-5">Change Password</h5>
+        <hr>
+        <div class="mx-auto w-75">
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label>Current Password </label>
+              <input type="password" name="currentPassword" />
+            </div>
+            <div class="form-group col-md-3">
+              <label>New Password: </label>
+              <input type="password" name="newPassword" />
+            </div>
+            <div class="form-group col-md-3">
+              <label>Confirm Password: </label>
+              <input type="password" name="confirmPassword" />
+            </div>
+          </div>
+          <button class="btn btn-primary mb-2" type="submit">Change Password</button>
+
+      </form>
+    </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="bg-light my-1 py-1 text-right ">
+          <p>Project Explorer &copy; 2020 - <b>Edconnect</b></p>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
