@@ -38,25 +38,26 @@
     </nav>
     <div class="container">
       <h4 class="display-5">Project Gallery</h4>
-      <form nmae="searchTerm">
-        <div class="form-row bg-light p-3 ">
-          <div class="form-group  col-md-8 ">
-            <input class="form-control form-control-lg" type="text" name="searchTerm"
-                   placeholder="Project Name, Authors, Abstract, Tags" />
+      <form>
+        <div class=" bg-light p-3">
+          <div class="form-row  ">
+            <div class="form-group  col-md-8 ">
+              <input name="searchTerm" class="form-control form-control-lg" type="text"
+                     placeholder="Project Name, Authors, Abstract, Tags" />
+            </div>
+            <p class="lead pt-2 pr-1"> Search By: </p>
+            <div class="form-group mr-3">
+              <select class="form-control form-control-lg " name="searchType">
+                <option value="Name">Name</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Authors"> Authors</option>
+                <option value="Tags"> Tags</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
+            </div>
           </div>
-          <p class="lead pt-2 pr-1"> Search By: </p>
-          <div class="form-group mr-3">
-            <select class="form-control form-control-lg " name="searchType">
-              <option value="Name">Name</option>
-              <option value="Abstract">Abstract</option>
-              <option value="Authors"> Authors</option>
-              <option value="Tags"> Tags</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <input class="btn btn-lg btn-primary" type="submit" value="Submit" />
-          </div>
-        </div>
       </form>
     </div>
 
