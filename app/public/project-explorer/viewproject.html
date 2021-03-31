@@ -5,52 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>View Project</title>
   </head>
 
   <body>
-    <header>
-      <h1>Project Explorer</h1>
-      <h2>One Stop Database for Acaemic Projects</h2>
-    </header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="search.html">Projects</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </nav>
-    <main>
-      <div>
-        <h2>Project 1</h2>
-        <a href="editproject.html">Edit Project</a>
-        <ul>
-          <li>Created by: Anne Hills</li>
-          <li>Date Created: 02/02/2020</li>
-          <li>Last Updated: 02/03/2021</li>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 ">
+      <a class="navbar-brand" href="#">Project Explorer</a>
 
-        </ul>
-      </div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-2 " type="text" name="searchForm" placeholder="Search Projects">
 
-      <div>
-        <h2>Project Abstract</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur nobis, ad qui dolorum commodi
-          modi quibusdam laudantium eum dignissimos, optio repellat veniam reiciendis odio vitae quis doloremque iusto
-          vero aspernatur iste. Hic dolore, nemo nesciunt quidem laboriosam deserunt, dolores, maiores blanditiis itaque
-          explicabo asperiores accusamus qui in aliquid ab?
-        </p>
-      </div>
-      <div>
-        <h2>Project Details</h2>
-        <ul>
-          <li>Authors: Jobn Doe, Anne Mill</li>
-          <li>Tags: #Asylum #Freedom</li>
-          <li>Project Files:
-            <a href="file.html">File 1</a>
-            <a href="file.html">File 2</a>
+        <button class="btn btn-primary btn-outline-light mr-2">Search</button>
+      </form>
+
+      <ul class=" navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Submit</a>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class=" navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
           </li>
         </ul>
       </div>
-    </main>
+    </nav>
+
+    <div class="container">
+      <h2>Project 1</h2>
+
+      <div class="form-row bg-light mr-4 ">
+        <div class="col col-md-3 order-12 d-flex">
+          <button class="btn-primary btn">
+            <a class="text-white" href="editproject.html">Edit Project</a>
+          </button>
+        </div>
+        <div class="col col-md-3">
+          Created by <br> Anne Hills
+        </div>
+        <div class="col col-md-3">
+          Date Created <br> 02/02/2020
+        </div>
+        <div class="col col-md-3">
+          Last Updated <br> 02/03/2021
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col col-md-5">
+
+          <h4> <strong> Project Abstract </strong> </h4>
+          <hr>
+          <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur nobis, ad
+            qui dolorum commodi
+            modi quibusdam laudantium eum dignissimos, optio repellat veniam reiciendis odio vitae quis doloremque iusto
+            vero aspernatur iste. Hic dolore, nemo nesciunt quidem laboriosam deserunt, dolores, maiores blanditiis
+            itaque
+            explicabo asperiores accusamus qui in aliquid ab?
+          </p>
+          <h5> <strong> Comments</strong> </h5>
+          <textarea class=" form-control rounded-2 mb-3" rows=4 placeholder="Leave a comment"></textarea>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <hr>
+          <h5 class="text-center"> No comments added yet</h5>
+        </div>
+
+        <div class="col col-md-5 ">
+          <h4> <strong>Project Details </strong> </h4>
+          <hr>
+          <div class="card">
+            <div class="card-header">
+              <h4><strong>Author(s)</strong></h4>
+            </div>
+            <div class="card-body">
+              <div class="card-title">
+                <h5>Job Ugbem</h5>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#"> #web</a>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+            <div class="card-header">
+              <h4><strong>Project Files</strong></h4>
+            </div>
+            <div class="card-body">
+              <div class="card-text text-center">
+                <h5>No file uploaded yet</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="bg-light my-1 py-1 text-right ">
+          <p>Project Explorer &copy; 2020 - <b>Edconnect</b></p>
+        </div>
+      </div>
+    </footer>
   </body>
 
 </html>
