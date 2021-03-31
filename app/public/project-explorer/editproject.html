@@ -42,70 +42,71 @@
       <h4> <strong> Project 1</strong> </h4>
 
       <div class="form-row bg-light my-1 py-1 ">
-        <div class=" col-md-3">
-          Created by <br>
-          Anne Hills
+        <div class=" col-3">
+          Created by <br> Anne Hills
         </div>
-        <div class=" col-md-3">
+        <div class=" col-3">
           Date Created <br> 02/02/2020
         </div>
-        <div class="col md-3">
+        <div class="col col-3">
           Last Updated <br> 02/03/2021
         </div>
-        <div class="d-flex col-md-3">
-
+        <div class="d-flex col-3">
           <a class="btn btn-primary" href="viewproject.html">View Project</a>
-
         </div>
       </div>
 
       <!-- Edit Project -->
       <form>
-
-
-
         <hr>
-
         <div class=" row  pt-5">
-
-          <div class="col col-md-6">
+          <div class="col ">
             <h5><strong> Edit Project</strong> </h5>
             <hr>
-            <label>Project Name </label>
-            <input class="form-control" type="text" name="name" placeholder="Project Name" />
+            <div class="col ">
+              <label>Project Name </label>
+              <input class="form-control" type="text" name="name" placeholder="Project Name" />
+            </div>
+            <div class="col ">
+              <label class="form-label">Project Abstract </label>
+              <textarea class="form-control rounded-0" rows=10 type="text" name="abstract"> </textarea>
 
-            <label class="form-label">Project Abstract </label>
-            <textarea class="form-control rounded-0" rows=10 type="text" name="abstract"> </textarea>
-
-            <label>Authors </label>
-            <input class="form-control" type="text" name="authors" placeholder="Job Ugbem" />
-
-            <label>Tag(s): </label>
-            <input class="form-control" type="text" name="tags" placeholder="#web" />
-            <button class="btn mt-2 btn-primary"> Save</button>
+            </div>
+            <div class="col">
+              <label>Authors </label>
+              <input class="form-control" type="text" name="authors" placeholder="Job Ugbem" />
+            </div>
+            <div class="col ">
+              <label>Tag(s): </label>
+              <input class="form-control" type="text" name="tags" placeholder="#web" />
+              <button class="btn mt-2 btn-primary"> Save</button>
+            </div>
           </div>
 
           <!-- Manage Files -->
-          <div class="col col-md-6 ">
+          <div class="col  ">
             <h5> <strong> Manage Project Files </strong> </h5>
             <hr>
-            <div class="custom-file">
-              <input class="custom-file-input" type="file" placeholder="Click to open file browser">
-              <label class="custom-file-label" type="file" name="projectFile">Click to open file browser</label>
+            <div class="col">
+              <div class="custom-file">
+                <input class="custom-file-input" type="file" placeholder="Click to open file browser">
+                <label class="custom-file-label" type="file" name="projectFile">Click to open file browser</label>
+              </div>
             </div>
             <hr>
-            <div class="card">
-              <div class="card-header">
-                <h5><strong> Project Files </strong></h5>
-              </div>
-              <div class="card-body  text-center">
-                <div class="card-title">
-                  <h4>No file uploaded yet</h4>
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h5><strong> Project Files </strong></h5>
+                </div>
+                <div class="card-body  text-center">
+                  <div class="card-title">
+                    <h4>No file uploaded yet</h4>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
       </form>
     </div>
